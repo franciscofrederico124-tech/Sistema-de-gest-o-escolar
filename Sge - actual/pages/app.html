@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="theme-color" content="blue">
+    <title> Sistema de gestão escolar / Painel de Controle </title>
+
+    <link rel="stylesheet" href="../Styles/app.css">
+</head>
+
+<body>
+
+    <form action="#" id="admin">
+        <h1>
+            Confirmação de identidade
+        </h1>
+
+        <input type="text" name="user_name" id="user_name" placeholder="Nome de Gerente" required minlength="5" maxlength="20"/>
+        <input type="password" name="user_pass" id="user_pass" placeholder="Palavra-passe" required minlength="5" maxlength="8"/>
+        <button>
+            Entrar
+        </button>
+    </form>
+
+    <main id="container">
+        <section id="header">
+            <div>
+                <h1>
+                     Sistema gestão escolar <sub id="marker">/ Home</sub>
+                </h1>
+            </div>
+            <div>
+                <button id="menu">
+                    <span class="on"></span>
+                    <span class="two"></span>
+                </button>
+            </div>
+        </section>
+
+        <div id="main">
+            <section id="aside" class="visible">
+                <h1 class="title">
+                    Sistema de gestão escolar
+                </h1>
+                <button class="opc dash" name="dash"> DashBoard </button>
+                <button class="opc leitura" name="leitura"> Ler RFID </button>
+                <button class="opc historico" name="historico"> Histórico de Leitura </button>
+                <button class="opc config" name="config"> Configuarações </button>
+                <button id="exit" class="opc exit">
+                    Voltar
+                </button>
+            </section>
+
+            <div id="section">
+
+            </div>
+
+        </div>
+    </main>
+    
+    <section id="alerts">
+        
+<div class="loading-google">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<section>
+    <h2>
+        Processando perfil...
+    </h2>
+</section>
+<!--
+    <div class="loading-simple">
+        
+    </div>
+-->
+    </section>
+
+</body>
+<script src="/Script/app.js"></script>
+
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 250;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    background-position: fixed;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background: linear-gradient(to right, darkgreen, green);
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+header div h1 {
+    color: white;
+}
+
+header div ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header div ul li {
+    list-style: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    background: url("/images/logo.jpg");
+    backdrop-filter: blur(15px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 95vh;
+    left: 0;
+    z-index: 1;
+    transition: all 0.25s ease-out;
+}
+
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    border-radius: 12px;
+    padding: 40px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+
+    gap: 10px;
+}
+
+#card {
+    transition: all .25s ease-out;
+    text-align: center;
+    align-items: center;
+}
+
+#card:hover {
+    backdrop-filter: blur(15px);
+    transform: translateY(-1.2%);
+}
+
+main section h2,
+main section p {
+    text-align: center;
+}
+
+#start {
+    width: 30%;
+    border-radius: 12px;
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    background: linear-gradient(to right, darkgreen, green);
+    color: white;
+    font-size: 11.4pt;
+    transition: all 0.25s ease-out;
+    text-decoration: none;
+}
+#start:hover {
+    transform: scale(0.99);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, darkgreen, green);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+li {
+  padding: 5px;
+  transition: all .4s ease-out !important;
+}
+
+
+
+li:hover {
+    border-bottom: 1px solid white;
+}
